@@ -3,16 +3,19 @@ title: "Examen final Modules 4 et 5"
 author: "Fabienne Neulat-Ripoll"
 subtitle: "DUBii 2021"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-
-
+bibliography: resources/biblio.bib 
+csl: resources/biomed-central.csl
 output:
     html_document:
+      css: [css/style.css, 'https://use.fontawesome.com/releases/v5.0.9/css/all.css']
       self_contained: true
       number_sections: false
       code_folding: "hide"
       toc: true
       toc_depth: 3
       toc_float: true
+      includes:
+        after_body: resources/footer.html
       
 ---
 
@@ -147,7 +150,7 @@ La qualité des bases vous paraît-elle satisfaisante ? Pourquoi ?
 
 car <code> On remarque que les valeurs de score qualité sont > 30  (> Q30).</code> comme le montre <code> le rapport de controle qualité Fastq et plus précisément le graphique “FastQ mean quality Scores” </code> comme le montre <code> </code>
 
-Lien vers le [rapport MulitQC] (https://github.com/fabienne-nr/EvaluationM4M5_FNR/blob/master/multiqc_report.html)
+Lien vers le [rapport MulitQC] (https://fabienne-nr.github.io/Evaluation_M4M5/multiqc_report.html)
 
 Est-ce que les reads déposés ont subi une étape de nettoyage avant d'être déposés ? Pourquoi ?
 
